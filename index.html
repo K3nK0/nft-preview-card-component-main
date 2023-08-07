@@ -6,15 +6,18 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
 </head>
-<body class="bg-mainDarkBlue h-screen flex justify-center items-center">
+<body class="bg-mainDarkBlue h-screen flex justify-center items-center font-Outfit">
 
-  <div class="bg-cardDarkBlue max-w-xs p-6 rounded-xl shadow-lg">
+  <div class="bg-cardDarkBlue max-w-xs sm:max-w-sm p-6 rounded-xl shadow-lg">
 
-    <div class="relative max-w-xs mb-5 rounded-lg overflow-hidden cursor-pointer">
+    <div class="relative max-w-xs sm:max-w-sm mb-5 rounded-lg overflow-hidden cursor-pointer">
       <div class="absolute w-full h-full inset-0 bg-cyan grid place-items-center opacity-0 transition-opacity hover:opacity-100">
         <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
       </div>
@@ -35,17 +38,16 @@
         <span class="text-softBlue font-normal">3 days left</span>
       </div>
     </div>  
+
+    <div class="bg-lineDarkBlue h-px opacity-50 mb-5"></div>
+
+    <div class="flex items-center">
+      <div class="grid place-items-center w-10 h-10 rounded-full bg-white">
+        <img src="images/image-avatar.png" alt="" class="h-9 w-9">
+      </div>
+      <p class="text-softBlue text-lg ml-5">Creation of <span class="text-white cursor-pointer hover:text-cyanTxt">Jules Wyvern</span></p>
+    </div>
   </div>
-
-
-<!-- 
-
-  
-  
-  
-  Creation of Jules Wyvern
-
-   -->
 
 </body>
 </html>

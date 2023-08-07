@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Outfit': ['Outfit', 'sans-serif']
+      },
+    },
     colors: {
       softBlue: 'hsl(215, 51%, 70%)',
       cyan: 'hsl(178, 100%, 50%, 50%)',
